@@ -33,42 +33,54 @@ function Home() {
 
   const products = [
     {
-      imageUrl: "https://moto.yugatech.com/wp-content/uploads/2023/05/yamaha-r15-v4-and-r15s-2023-launched-what-you-need-to-know.jpeg",
-      name: "Yamaha r15 white"
+      imageUrl: "https://static1.srcdn.com/wordpress/wp-content/uploads/2023/06/gojo-from-jujutsu-kaisen-season-2.jpg",
+      name: "Gojo",
+      price: "10000 Curse Technique"
     },
     {
-      imageUrl: "https://assets.otocapital.in/prod/racing-blue-yamaha-r15-v3-image.jpeg",
-      name: "Yamaha r15 blue"
+      imageUrl: "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/04/itadori-yuji-as-seen-during-the-shijuku-showdown-with-red-hands-surrounded-by-black-sparks-of-black-flash-in-jujutsu-kaisen.jpg",
+      name: "Yuji",
+      price: "2000 Curse Technique"
     },
     {
-      imageUrl: "https://imgd.aeplcdn.com/370x208/n/cw/ec/108277/yamaha-yzf-r15-right-side-view1.jpeg?isig=0&q=80",
-      name: "Yamaha r15 blue"
+      imageUrl: "https://cdn.oneesports.gg/cdn-data/2021/06/JujutsuKaisenPhamtomParade_KentoNanami-min-1.jpeg",
+      name: "Nanami",
+      price: "3000 Curse Technique"
     },
     {
-      imageUrl: "https://cdn.motor1.com/images/mgl/W8GoQN/s3/yamaha-refreshes-yzf-r125-and-yzf-r15-sportbikes-in-japan.jpg",
-      name: "Yamaha r15 blue"
+      imageUrl: "https://staticg.sportskeeda.com/editor/2023/12/ea6c8-17035939751121-1920.jpg",
+      name: "Megumi",
+      price: "4000 Curse Technique"
     },
     {
-      imageUrl: "https://www.perfectriders.in/wp-content/uploads/2024/01/magenta.webp",
-      name: "Yamaha r15 blue"
+      imageUrl: "https://pop.inquirer.net/files/2022/06/jujutsu-kaisen-3.jpeg",
+      name: "Sukuna",
+      price: "5000 Curse Technique"
+    },
+    {
+        imageUrl: "https://cdn.epicstream.com/images/ncavvykf/epicstream/3fb87cdbb4e53a07342a2383f82cd529bebff2e8-1200x675.jpg?rect=0,23,1200,630&w=1200&h=630&auto=format",
+        name: "Geto",
+        price: "6000 Curse Technique"
     }
   ];
 
   return (
     <div>
-      <div className="featureTitle">
-        <h1><p>Featured</p></h1>
+      <div className="Title">
+        <h1><p>JuJutSu Kaisen Shop</p></h1>
       </div>
 
       <div className="bannerHolder">
-        <img className="bannerImage" src="https://d1hv7ee95zft1i.cloudfront.net/custom/motorcycle-model-photo/mobile/gallery/5e216344b3450.jpg" alt="Featured" />
+        <img className="bannerImage" src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/03/jujutsu-kaisen-0-banner-poster.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt="Featured" />
       </div>
       
       <div className="product-holder">
         {products.map((product, index) => (
           <div className="product-item" key={index}>
             <img src={product.imageUrl} alt={product.name} />
-            <div className="button-container">
+            <div className="product-details">
+              <h3>{product.name}</h3>
+              <p>{product.price}</p>
               <button className="button" onClick={() => handleExpandClick(product.imageUrl)}>
                 Expand
               </button>
