@@ -4,57 +4,54 @@ import { firestore } from './Config/firebase';
 import './index.css';
 
 const ProductsList = ({ onSelectProduct }) => {
-  const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const querySnapshot = await firestore.collection('products').get();
-        const productsData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        setProducts(productsData);
-      } catch (error) {
-        console.error('Error fetching products:', error);
-      }
-    };
-  
-    fetchData();
-  }, []);
-  
-  return (
-    <div>
-      {/* Navbar */}
-      <nav>
-        {/* Your navbar content here */}
-      </nav>
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const querySnapshot = await firestore.collection('products').get();
+                const productsData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                setProducts(productsData);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        };
 
-      {/* Products List */}
-      <div className="products-list">
-        <h2>Products List</h2>
-        
-        {/* Banner */}
-        <div className="banner">
-          <img className="bannerImage" src="https://www.looper.com/img/gallery/jujutsu-kaisen-season-2-release-date-cast-and-plot-what-we-know-so-far/l-intro-1680014975.jpg" alt="Featured" />
+        fetchData();
+    }, []);
+
+    return (
+        <div>
+            <div className="products-list">
+                {/* Banner Holder with Curved Corners */}
+                <div className="banner-holder">
+                    {/* Banner */}
+                    <div className="banner">
+                        <img className="bannerImage" src="https://www.looper.com/img/gallery/jujutsu-kaisen-season-2-release-date-cast-and-plot-what-we-know-so-far/l-intro-1680014975.jpg" alt="Featured" />
+                    </div>
+                </div>
+                <div className="Subtitle">
+                <h1>Featured</h1> {/* Move the "Featured" heading above the product cards */}
+                </div>
+                <ul className="product-cards">
+                    {products.map(product => (
+                        <li key={product.id} className="product-card">
+                            {/* Wrap each product card with a Link */}
+                            <Link to={`/products/${product.id}`} className="product-link">
+                                <div className="product-image-wrapper">
+                                    <img src={product.imageUrl} alt="Product" className="product-image" />
+                                </div>
+                                <div className="product-details">
+                                    <h3 className="product-name">{product.name}</h3>
+                                    <p>{product.price}</p>
+                                </div>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
-        
-        <ul className="product-cards">
-          {products.map(product => (
-            <li key={product.id} className="product-card">
-              {/* Wrap each product card with a Link */}
-              <Link to={`/products/${product.id}`} className="product-link">
-                <div className="product-image-wrapper">
-                  <img src={product.imageUrl} alt="Product" className="product-image" />
-                </div>
-                <div className="product-details">
-                  <h3 className="product-name">{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default ProductsList;

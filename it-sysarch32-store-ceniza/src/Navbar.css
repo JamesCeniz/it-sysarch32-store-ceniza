@@ -1,0 +1,17 @@
+/* Navbar.css */
+.navbar {
+    border-bottom: 1px solid #fffcfc; /* Add border to the bottom */
+    padding: 10px 0; /* Add padding to separate content */
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  .navbar-divider {
+    margin-bottom: 0px;
+  }
+  

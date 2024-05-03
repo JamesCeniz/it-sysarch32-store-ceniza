@@ -1,0 +1,51 @@
+/* ProductDetails.css */
+.product-details-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    margin-left: 900px;
+    margin-right: 900px;
+    background-color: rgb(250, 255, 255);
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px; /* Add some space below the product name */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details-image {
+    width: 500px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-price {
+    font-size: 20px;
+    font-family: fantasy;
+    align-items: center; 
+    margin-left: 100px;
+    margin-top: 16px; /* Add some space above the price */
+}
+
+.product-description {
+ font: 1em sans-serif;
+ font-size: 20px;
+ font-style: bold;
+ font-family: cursive;
+}
