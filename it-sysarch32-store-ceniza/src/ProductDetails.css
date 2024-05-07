@@ -38,14 +38,13 @@
 .product-price {
     font-size: 20px;
     font-family: fantasy;
-    align-items: center; 
-    margin-left: 100px;
+    text-align: center; /* Center the text */
     margin-top: 16px; /* Add some space above the price */
 }
 
 .product-description {
- font: 1em sans-serif;
- font-size: 20px;
- font-style: bold;
- font-family: cursive;
+    font: 1em sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    font-family: cursive;
 }
