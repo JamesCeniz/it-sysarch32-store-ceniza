@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <h1>JujutSu Kaisen Shop</h1>
-      <hr className="navbar-divider" /> {/* Add a horizontal line */}
+      <hr className="navbar-divider" /> 
     </div>
   );
 };
