@@ -1,0 +1,39 @@
+/* Cart.css */
+.cart-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .cart-item img {
+    margin-right: 10px; /* Add spacing between image and text */
+    border-radius: 20px;
+  }
+  
+  .cart-item-details {
+    text-align: center; /* Center text horizontally */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  /* Cart.css */
+.cart-item {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column layout */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .cart-item img {
+    margin-bottom: 10px; /* Add spacing between image and text */
+  }
+  
+  .delete {
+    margin-bottom: 15px; /* Add spacing between image and text */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+  }
+  

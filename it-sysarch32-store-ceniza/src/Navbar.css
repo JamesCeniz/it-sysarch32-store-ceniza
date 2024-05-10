@@ -7,11 +7,49 @@
   .navbar h1 {
     margin: 0;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   
   .navbar-divider {
     margin-bottom: 0px;
   }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: rgb(17, 16, 16);
+    text-decoration: none;
+    margin-left: 20px; /* Adjust spacing between links */
+  }
+  
+  .navbar-divider {
+    margin-top: 10px;
+    border-color: rgb(15, 15, 15);
+  }
+  
+  .products {
+    position: absolute;
+    top: 35px; /* Adjust top position */
+    left: 350px; /* Adjust left position */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 27px;
+    font-weight: bolder;
+  }
+  
+  /* Style for "View Cart" link */
+  .view-cart-link {
+    position: absolute;
+    top: 35px; /* Adjust top position */
+    right: 50px; /* Adjust right position */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+
+  
   
