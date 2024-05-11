@@ -14,7 +14,7 @@ const Cart = () => {
 
   const handleBuyNow = async (index) => {
     try {
-      const response = await fetch('http://localhost:4000/create-checkout-session', {
+      const response = await fetch('http://35.187.230.242/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
