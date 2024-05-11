@@ -1,50 +1,68 @@
 /* ProductDetails.css */
-.product-details-card {
+.product-title {
+    text-align: center;
+  }
+  
+  .product-details-card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
-    margin: 16px;
-    margin-left: 900px;
-    margin-right: 900px;
+    margin: 16px auto;
     background-color: rgb(250, 255, 255);
     display: flex; /* Use flexbox */
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
-}
-
-.product-name {
+    width: 80%;
+  }
+  
+  .product-name {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 16px; /* Add some space below the product name */
-}
-
-.product-info {
+  }
+  
+  .product-info {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
-}
-
-.product-wrapper {
+  }
+  
+  .product-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.product-details-image {
+  }
+  
+  .product-details-image {
     width: 500px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
-}
-
-.product-price {
+  }
+  
+  .product-price {
     font-size: 20px;
     font-family: fantasy;
     text-align: center; /* Center the text */
     margin-top: 16px; /* Add some space above the price */
-}
-
-.product-description {
+  }
+  
+  .product-description {
     font: 1em sans-serif;
     font-size: 20px;
     font-style: bold;
     font-family: cursive;
-}
+  }
+  
+  button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
