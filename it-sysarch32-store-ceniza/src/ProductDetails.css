@@ -13,7 +13,7 @@
 }
 
 .product-name {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 16px; /* Add some space below the product name */
 }
@@ -47,4 +47,13 @@
     font-size: 20px;
     font-style: bold;
     font-family: cursive;
+    text-align: center;
+}
+
+.cartbtn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
 }

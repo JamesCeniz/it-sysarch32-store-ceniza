@@ -43,7 +43,7 @@ const ProductsList = ({ onSelectProduct }) => {
                                 </div>
                                 <div className="product-details">
                                     <h3 className="product-name">{product.name}</h3>
-                                    <p>{product.price}</p>
+                                    <p className='price'>{product.price}</p>
                                 </div>
                             </Link>
                         </li>
