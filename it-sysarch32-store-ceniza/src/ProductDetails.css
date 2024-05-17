@@ -6,7 +6,7 @@
     margin: 16px;
     margin-left: 900px;
     margin-right: 900px;
-    background-color: rgb(250, 255, 255);
+    background-color: rgb(250, 250, 250);
     display: flex; /* Use flexbox */
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
