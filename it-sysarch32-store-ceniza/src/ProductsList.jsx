@@ -27,7 +27,7 @@ const ProductsList = ({ onSelectProduct }) => {
                 <div className="banner-holder">
                     {/* Banner */}
                     <div className="banner">
-                        <img className="bannerImage" src="https://www.looper.com/img/gallery/jujutsu-kaisen-season-2-release-date-cast-and-plot-what-we-know-so-far/l-intro-1680014975.jpg" alt="Featured" />
+                        <img className="bannerImage" src="https://pbs.twimg.com/media/EnqBQtsXIAExF_a?format=jpg&name=large" alt="Featured" />
                     </div>
                 </div>
                 <div className="Subtitle">
